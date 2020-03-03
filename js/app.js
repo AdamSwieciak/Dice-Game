@@ -13,8 +13,8 @@ document.querySelector(".btn-roll").addEventListener("click", function() {
     var RollButt1 = document.querySelector(".dice1");
     RollButt.style.display = "block";
     RollButt1.style.display = "block";
-    RollButt.src = "dice-" + dice + ".png";
-    RollButt1.src = "dice-" + dice1 + ".png";
+    RollButt.src = "img/dice-" + dice + ".png";
+    RollButt1.src = "img/dice-" + dice1 + ".png";
     if ((dice === 6 && lastDice === 6) || (dice1 === 6 && lastDice1 === 6)) {
       scores[activePlayer] = 0;
       document.querySelector("#score-" + activePlayer).textContent =
